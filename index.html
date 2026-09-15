@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dr. Pushpa &amp; Associates | Family Dentist in Markham, ON</title>
+<meta name="description" content="Dr. Pushpa &amp; Associates (Dr. Pushpa Vannithamby) offers gentle family, cosmetic, restorative and emergency dentistry at 7595 Markham Road, Unit 4, Markham, ON. English, Punjabi &amp; Urdu spoken. Call (905) 201-8900." />
+<meta name="theme-color" content="#0F172A" />
+<meta property="og:title" content="Dr. Pushpa &amp; Associates | Family Dentist in Markham" />
+<meta property="og:description" content="Gentle, comprehensive dental care for your entire family. 7595 Markham Rd, Unit 4, Markham. (905) 201-8900." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230D9488' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5.5c-1.5-1.5-3-2-4.5-2C5 3.5 3 5.5 3 9c0 4 1.5 7 2.5 9.5.6 1.5 1.2 2 2 2 1 0 1.4-.8 1.8-2.3l.9-3.2c.2-.7.5-1 1.3-1s1.1.3 1.3 1l.9 3.2c.4 1.5.8 2.3 1.8 2.3.8 0 1.4-.5 2-2C18.5 16 20 13 20 9c0-3.5-2-5.5-4.5-5.5-1.5 0-3 .5-4.5 2Z'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Dr. Pushpa & Associates",
+  "telephone": "+1-905-201-8900",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7595 Markham Road, Unit 4",
+    "addressLocality": "Markham",
+    "addressRegion": "ON",
+    "postalCode": "L3S 0B6",
+    "addressCountry": "CA"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.8505253, "longitude": -79.2538368 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00" }
+  ],
+  "knowsLanguage": ["English", "Punjabi", "Urdu"]
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Plus Jakarta Sans', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        },
+        colors: {
+          clinic: { 50:'#F0FDFA', 100:'#CCFBF1', 200:'#99F6E4', 300:'#5EEAD4', 400:'#2DD4BF', 500:'#14B8A6', 600:'#0D9488', 700:'#0F766E', 800:'#115E59', 900:'#134E4A' },
+          sky2:   { 100:'#E0F2FE' },
+          ink:    { 950:'#0B1220', 900:'#0F172A', 800:'#1E293B', 700:'#273449', 600:'#334155', 400:'#64748B' }
+        },
+        boxShadow: {
+          card:  '0 1px 2px 0 rgba(15,23,42,.05), 0 1px 3px 0 rgba(15,23,42,.08)',
+          lift:  '0 18px 40px -14px rgba(13,148,136,.35), 0 6px 14px -6px rgba(15,23,42,.12)',
+          modal: '0 24px 64px -12px rgba(15,23,42,.45)',
+          glow:  '0 0 0 1px rgba(45,212,191,.25), 0 20px 60px -20px rgba(20,184,166,.55)',
+        },
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+  body { background:#EEF2F6; color:#334155; -webkit-font-smoothing:antialiased; }
+
+  /* ---------- Keyframes ---------- */
+  @keyframes fadeUp   { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
+  @keyframes fadeIn   { from { opacity:0; } to { opacity:1; } }
+  @keyframes spin     { to { transform: rotate(360deg); } }
+  @keyframes spinRev  { to { transform: rotate(-360deg); } }
+  @keyframes floaty   { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-12px); } }
+  @keyframes marquee  { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+  @keyframes pulseRing{ 0% { transform:scale(.9); opacity:.6; } 70% { transform:scale(1.9); opacity:0; } 100% { opacity:0; } }
+  @keyframes wordIn   { from { opacity:0; transform:translateY(60%) rotateX(-60deg); filter:blur(4px); } to { opacity:1; transform:none; filter:blur(0); } }
+  @keyframes wordOut  { to   { opacity:0; transform:translateY(-60%) rotateX(60deg); filter:blur(4px); } }
+  @keyframes toastIn  { from { opacity:0; transform:translateX(28px) scale(.96); } to { opacity:1; transform:none; } }
+  @keyframes toastOut { to   { opacity:0; transform:translateX(28px) scale(.96); } }
+  @keyframes shimmer  { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+  @keyframes wiggle   { 0%,100% { transform:rotate(0); } 25% { transform:rotate(-8deg); } 75% { transform:rotate(8deg); } }
+
+  .anim-up { animation: fadeUp .8s cubic-bezier(.16,1,.3,1) both; }
+  .anim-in { animation: fadeIn 1s ease both; }
+  .d1{animation-delay:.08s}.d2{animation-delay:.16s}.d3{animation-delay:.24s}.d4{animation-delay:.32s}.d5{animation-delay:.4s}
+
+  .reveal { opacity:0; transform:translateY(26px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+  .reveal.is-visible { opacity:1; transform:none; }
+
+  .float  { animation: floaty 6s ease-in-out infinite; }
+  .float2 { animation: floaty 7s ease-in-out -2.5s infinite; }
+
+  /* ---------- Rotating word ---------- */
+  .rotator { display:inline-grid; perspective: 600px; vertical-align: bottom; }
+  .rotator > span { grid-area:1/1; white-space:nowrap; opacity:0; }
+  .rotator > span.in  { animation: wordIn .7s cubic-bezier(.16,1,.3,1) forwards; }
+  .rotator > span.out { animation: wordOut .5s cubic-bezier(.7,0,.84,0) forwards; opacity:1; }
+  .text-shine {
+    background: linear-gradient(90deg,#2DD4BF 0%,#99F6E4 30%,#5EEAD4 50%,#14B8A6 70%,#2DD4BF 100%);
+    background-size: 200% auto; -webkit-background-clip:text; background-clip:text; color:transparent;
+    animation: shimmer 6s linear infinite;
+  }
+
+  /* ---------- Orbit ---------- */
+  .orbit       { animation: spin 38s linear infinite; }
+  .orbit-item  { animation: spinRev 38s linear infinite; }
+  .orbit-slow  { animation: spinRev 70s linear infinite; }
+  .orbit:hover, .orbit:hover .orbit-item { animation-play-state: paused; }
+
+  /* ---------- Marquee ---------- */
+  .marquee-track { animation: marquee 38s linear infinite; }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+  .marquee { mask-image: linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); -webkit-mask-image: linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); }
+
+  /* ---------- Cards ---------- */
+  .card-hover { transition: transform .35s cubic-bezier(.16,1,.3,1), box-shadow .35s ease, border-color .35s ease; }
+  .card-hover:hover { transform: translateY(-7px); border-color:#5EEAD4; }
+  .card-hover:hover .icon-wiggle { animation: wiggle .6s ease; }
+  .icon-spin-hover { transition: transform .6s cubic-bezier(.16,1,.3,1); }
+  .card-hover:hover .icon-spin-hover { transform: rotate(360deg); }
+
+  /* ---------- Nav ---------- */
+  .nav-link { position:relative; }
+  .nav-link::after { content:''; position:absolute; left:0; bottom:-6px; height:2px; width:100%; background:linear-gradient(90deg,#14B8A6,#0D9488); transform:scaleX(0); transform-origin:right; transition:transform .3s cubic-bezier(.16,1,.3,1); border-radius:2px; }
+  .nav-link:hover::after, .nav-link.active::after { transform:scaleX(1); transform-origin:left; }
+
+  .btn-primary { transition: transform .2s cubic-bezier(.16,1,.3,1), box-shadow .25s ease, background-color .25s ease; }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 30px -12px rgba(13,148,136,.7); }
+  .btn-primary:active { transform: translateY(0) scale(.98); }
+
+  .pulse-dot::before { content:''; position:absolute; inset:0; border-radius:9999px; background:currentColor; animation: pulseRing 2.2s cubic-bezier(.4,0,.6,1) infinite; }
+
+  /* ---------- Modal ---------- */
+  #apptModal { transition: opacity .28s ease, visibility .28s ease; }
+  #apptModal.hidden-modal { opacity:0; visibility:hidden; pointer-events:none; }
+  #apptModal .modal-panel { transition: transform .38s cubic-bezier(.16,1,.3,1), opacity .38s ease; }
+  #apptModal.hidden-modal .modal-panel { transform: translateY(24px) scale(.97); opacity:0; }
+
+  #mobileMenu { max-height:0; overflow:hidden; opacity:0; transition: max-height .45s cubic-bezier(.16,1,.3,1), opacity .3s ease; }
+  #mobileMenu.open { max-height:520px; opacity:1; }
+
+  .toggle-track { transition: background-color .25s ease; }
+  .toggle-knob  { transition: transform .25s cubic-bezier(.16,1,.3,1); }
+  input:checked + .toggle-track { background-color:#0D9488; }
+  input:checked + .toggle-track .toggle-knob { transform: translateX(20px); }
+  input:focus-visible + .toggle-track { outline:2px solid #14B8A6; outline-offset:2px; }
+
+  .field { transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease; }
+  .field:focus { outline:none; border-color:#14B8A6; background:#fff; box-shadow:0 0 0 4px rgba(20,184,166,.15); }
+
+  .dot-grid { background-image: radial-gradient(rgba(148,163,184,.18) 1px, transparent 1px); background-size: 22px 22px; }
+  .hero-glow { background: radial-gradient(60% 55% at 78% 35%, rgba(20,184,166,.28) 0%, transparent 70%), radial-gradient(45% 45% at 10% 90%, rgba(56,189,248,.14) 0%, transparent 70%); }
+
+  .hours-row.today { background: linear-gradient(90deg, rgba(20,184,166,.12), rgba(20,184,166,.03)); }
+
+  ::selection { background:#CCFBF1; color:#0F172A; }
+  .nice-scroll::-webkit-scrollbar { width:8px; }
+  .nice-scroll::-webkit-scrollbar-thumb { background:#CBD5E1; border-radius:8px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,*::before,*::after { animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
+    .reveal { opacity:1; transform:none; }
+    .rotator > span:first-child { opacity:1; }
+    html { scroll-behavior:auto; }
+  }
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-[100] focus:top-3 focus:left-3 focus:bg-clinic-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-xl">Skip to content</a>
+
+<!-- ============ TOP INFO BAR ============ -->
+<div class="bg-ink-950 text-slate-300 text-[12.5px]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center justify-between gap-4">
+    <p class="flex items-center gap-2 min-w-0">
+      <span id="barDot" class="relative flex w-2 h-2 rounded-full text-clinic-400 bg-clinic-400 pulse-dot shrink-0"></span>
+      <span id="barStatus" class="truncate"><strong class="text-white font-semibold">Mon, Tue, Thu, Fri</strong> 10 AM – 6 PM &middot; <strong class="text-white font-semibold">Sat</strong> 10 AM – 4 PM</span>
+    </p>
+    <div class="hidden md:flex items-center gap-5 shrink-0">
+      <span class="flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-clinic-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg>
+        We speak <strong class="text-white font-semibold">English, Punjabi &amp; Urdu</strong>
+      </span>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Dr.+Pushpa+%26+Associate's+7595+Markham+Rd+Unit+4+Markham+ON+L3S+0B6" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:text-clinic-300 transition-colors">
+        <svg class="w-3.5 h-3.5 text-clinic-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        7595 Markham Rd, Unit 4
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar" class="sticky top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-xl border-b border-slate-200/70">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-[74px]">
+
+      <a href="#home" class="flex items-center gap-3 shrink-0" aria-label="Dr. Pushpa and Associates home">
+        <span class="relative flex items-center justify-center w-11 h-11 rounded-2xl bg-gradient-to-br from-clinic-500 to-clinic-800 shadow-lift">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5c-1.5-1.5-3-2-4.5-2C5 3.5 3 5.5 3 9c0 4 1.5 7 2.5 9.5.6 1.5 1.2 2 2 2 1 0 1.4-.8 1.8-2.3l.9-3.2c.2-.7.5-1 1.3-1s1.1.3 1.3 1l.9 3.2c.4 1.5.8 2.3 1.8 2.3.8 0 1.4-.5 2-2C18.5 16 20 13 20 9c0-3.5-2-5.5-4.5-5.5-1.5 0-3 .5-4.5 2Z"/></svg>
+        </span>
+        <span class="leading-tight">
+          <span class="block font-extrabold text-[15px] sm:text-[17px] tracking-tight text-ink-900">Dr. Pushpa <span class="text-clinic-600">&amp;</span> Associates</span>
+          <span class="block text-[10.5px] font-semibold tracking-[.16em] uppercase text-ink-400">Family Dentistry &middot; Markham</span>
+        </span>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-8 text-[15px] font-medium text-ink-600 whitespace-nowrap" aria-label="Primary">
+        <a href="#services" class="nav-link hover:text-ink-900 transition-colors">Services</a>
+        <a href="#family"   class="nav-link hover:text-ink-900 transition-colors">Patient Care</a>
+        <a href="#why"      class="nav-link hover:text-ink-900 transition-colors">Why Choose Us</a>
+        <a href="#location" class="nav-link hover:text-ink-900 transition-colors">Location &amp; Hours</a>
+      </nav>
+
+      <div class="hidden xl:flex items-center gap-3 whitespace-nowrap">
+        <a href="tel:+19052018900" class="group flex items-center gap-2.5 pl-2 pr-4 py-2 rounded-xl border border-slate-200 hover:border-clinic-300 hover:bg-clinic-50 transition-all duration-300">
+          <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-clinic-50 group-hover:bg-white transition">
+            <svg class="w-4 h-4 text-clinic-600 group-hover:animate-[wiggle_.6s_ease]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          </span>
+          <span class="leading-tight">
+            <span class="block text-[10px] font-semibold uppercase tracking-wider text-ink-400">Call us</span>
+            <span class="block text-sm font-extrabold text-ink-900 tabular-nums">(905) 201-8900</span>
+          </span>
+        </a>
+        <button data-open-modal class="btn-primary flex items-center gap-2 px-5 py-3.5 rounded-xl bg-clinic-600 hover:bg-clinic-700 text-white text-[13px] font-bold tracking-wide uppercase shadow-lift">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Request Appointment
+        </button>
+      </div>
+
+      <div class="flex xl:hidden items-center gap-2">
+        <a href="tel:+19052018900" aria-label="Call (905) 201-8900" class="flex items-center justify-center w-11 h-11 rounded-xl bg-clinic-600 text-white shadow-lift">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        </a>
+        <button id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu" class="flex items-center justify-center w-11 h-11 rounded-xl border border-slate-200 text-ink-800 hover:bg-slate-50 transition">
+          <svg id="iconOpen" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          <svg id="iconClose" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="xl:hidden border-t border-slate-100 bg-white">
+    <nav class="px-4 sm:px-6 py-5 flex flex-col gap-1" aria-label="Mobile">
+      <a href="#services" class="mobile-link flex items-center justify-between px-4 py-3.5 rounded-xl text-[15px] font-semibold text-ink-800 hover:bg-clinic-50 hover:text-clinic-700 transition">Services <span class="text-slate-300">&rsaquo;</span></a>
+      <a href="#family" class="mobile-link flex items-center justify-between px-4 py-3.5 rounded-xl text-[15px] font-semibold text-ink-800 hover:bg-clinic-50 hover:text-clinic-700 transition">Patient Care <span class="text-slate-300">&rsaquo;</span></a>
+      <a href="#why" class="mobile-link flex items-center justify-between px-4 py-3.5 rounded-xl text-[15px] font-semibold text-ink-800 hover:bg-clinic-50 hover:text-clinic-700 transition">Why Choose Us <span class="text-slate-300">&rsaquo;</span></a>
+      <a href="#location" class="mobile-link flex items-center justify-between px-4 py-3.5 rounded-xl text-[15px] font-semibold text-ink-800 hover:bg-clinic-50 hover:text-clinic-700 transition">Location &amp; Hours <span class="text-slate-300">&rsaquo;</span></a>
+      <button data-open-modal class="mt-3 w-full flex items-center justify-center gap-2 px-5 py-4 rounded-xl bg-clinic-600 text-white text-sm font-bold uppercase tracking-wide shadow-lift">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Request Appointment
+      </button>
+      <a href="tel:+19052018900" class="mt-1 w-full flex items-center justify-center gap-2 px-5 py-4 rounded-xl border border-slate-200 text-ink-900 text-sm font-bold">Call (905) 201-8900</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO (dark) ============ -->
+<section id="home" class="relative overflow-hidden bg-ink-900 text-white">
+  <div class="absolute inset-0 hero-glow" aria-hidden="true"></div>
+  <div class="absolute inset-0 dot-grid opacity-60" aria-hidden="true"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-16 sm:pt-20 sm:pb-24">
+    <div class="grid lg:grid-cols-12 gap-14 items-center">
+
+      <!-- Copy -->
+      <div class="lg:col-span-7">
+        <div class="anim-up inline-flex items-center gap-2.5 pl-2 pr-4 py-2 rounded-full bg-white/[.06] border border-white/10 text-clinic-200 text-[13px] font-semibold backdrop-blur">
+          <span class="relative flex w-2.5 h-2.5 rounded-full text-clinic-400 bg-clinic-400 pulse-dot"></span>
+          <span><strong class="text-white">Accepting new patients</strong> in Markham</span>
+        </div>
+
+        <h1 class="anim-up d1 mt-6 font-extrabold tracking-[-0.03em] text-[2.5rem] leading-[1.1] sm:text-6xl lg:text-[4rem] lg:leading-[1.06]">
+          Gentle, Comprehensive Dental Care for Your
+          <span class="block mt-1 h-[1.15em] overflow-visible">
+            <span class="rotator text-shine" id="rotator" aria-live="off">
+              <span class="in">Entire Family</span>
+              <span>Little Ones</span>
+              <span>Growing Teens</span>
+              <span>Busy Parents</span>
+              <span>Grandparents</span>
+            </span>
+          </span>
+        </h1>
+
+        <p class="anim-up d2 mt-7 max-w-xl text-[17px] sm:text-lg leading-[1.75] text-slate-300 font-body">
+          Providing <strong class="text-white font-semibold">trusted, personalized oral healthcare</strong> in Markham. We prioritize <strong class="text-white font-semibold">patient comfort</strong>, <strong class="text-white font-semibold">modern technique</strong>, and <strong class="text-clinic-300 font-semibold">healthy smiles</strong>.
+        </p>
+
+        <div class="anim-up d3 mt-9 flex flex-col sm:flex-row gap-3.5">
+          <button data-open-modal class="btn-primary inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-clinic-500 hover:bg-clinic-600 text-white font-bold shadow-glow">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Request an Appointment
+          </button>
+          <a href="#services" class="group inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl border-2 border-white/20 hover:border-clinic-300 hover:bg-white/5 text-white font-bold transition-all duration-300">
+            Explore Services
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="anim-up d4 mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-[13.5px] text-slate-400">
+          <span class="flex items-center gap-2"><svg class="w-4 h-4 text-clinic-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><strong class="text-slate-200 font-semibold">Direct insurance</strong> billing support</span>
+          <span class="flex items-center gap-2"><svg class="w-4 h-4 text-clinic-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><strong class="text-slate-200 font-semibold">Saturday</strong> appointments</span>
+          <span class="flex items-center gap-2"><svg class="w-4 h-4 text-clinic-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><strong class="text-slate-200 font-semibold">Oral sedation</strong> options</span>
+        </div>
+      </div>
+
+      <!-- Orbit visual -->
+      <div class="lg:col-span-5 anim-in d3">
+        <div class="relative mx-auto w-full max-w-[440px] aspect-square">
+          <!-- rings -->
+          <div class="absolute inset-0 rounded-full border border-white/10" aria-hidden="true"></div>
+          <div class="absolute inset-[13%] rounded-full border border-dashed border-clinic-400/25 orbit-slow" aria-hidden="true"></div>
+          <div class="absolute inset-[28%] rounded-full bg-gradient-to-br from-clinic-500/25 to-transparent blur-2xl" aria-hidden="true"></div>
+
+          <!-- center emblem -->
+          <div class="absolute inset-[30%] rounded-[2rem] bg-gradient-to-br from-clinic-400 to-clinic-800 shadow-glow flex items-center justify-center float">
+            <svg class="w-1/2 h-1/2 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5c-1.5-1.5-3-2-4.5-2C5 3.5 3 5.5 3 9c0 4 1.5 7 2.5 9.5.6 1.5 1.2 2 2 2 1 0 1.4-.8 1.8-2.3l.9-3.2c.2-.7.5-1 1.3-1s1.1.3 1.3 1l.9 3.2c.4 1.5.8 2.3 1.8 2.3.8 0 1.4-.5 2-2C18.5 16 20 13 20 9c0-3.5-2-5.5-4.5-5.5-1.5 0-3 .5-4.5 2Z"/><path d="M9 9.5c.6-.6 1.3-.9 2-.9" opacity=".7"/></svg>
+          </div>
+
+          <!-- rotating icons -->
+          <div class="orbit absolute inset-0" aria-hidden="true">
+            <div class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
+              <div class="orbit-item flex items-center justify-center w-14 h-14 rounded-2xl bg-ink-800 border border-white/10 shadow-lg">
+                <svg class="w-6 h-6 text-clinic-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+            </div>
+            <div class="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2">
+              <div class="orbit-item flex items-center justify-center w-14 h-14 rounded-2xl bg-ink-800 border border-white/10 shadow-lg">
+                <svg class="w-6 h-6 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.2 5.1 5.5.5-4.2 3.7 1.3 5.4L12 14.9 7.2 17.7l1.3-5.4-4.2-3.7 5.5-.5Z"/></svg>
+              </div>
+            </div>
+            <div class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2">
+              <div class="orbit-item flex items-center justify-center w-14 h-14 rounded-2xl bg-ink-800 border border-white/10 shadow-lg">
+                <svg class="w-6 h-6 text-rose-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+            </div>
+            <div class="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <div class="orbit-item flex items-center justify-center w-14 h-14 rounded-2xl bg-ink-800 border border-white/10 shadow-lg">
+                <svg class="w-6 h-6 text-sky-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- floating cards -->
+          <div class="float2 absolute -left-2 sm:-left-8 top-[16%] flex items-center gap-3 px-4 py-3 rounded-2xl bg-white text-ink-900 shadow-modal">
+            <span id="heroStatusIcon" class="relative flex w-2.5 h-2.5 rounded-full text-emerald-500 bg-emerald-500 pulse-dot"></span>
+            <span class="leading-tight">
+              <span id="heroStatus" class="block text-[13px] font-extrabold">Open today</span>
+              <span id="heroStatusSub" class="block text-[11.5px] text-ink-400 font-medium">10 AM – 6 PM</span>
+            </span>
+          </div>
+          <div class="float absolute -right-1 sm:-right-6 bottom-[14%] flex items-center gap-3 px-4 py-3 rounded-2xl bg-white text-ink-900 shadow-modal">
+            <span class="flex items-center justify-center w-9 h-9 rounded-xl bg-clinic-50">
+              <svg class="w-5 h-5 text-clinic-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+            </span>
+            <span class="leading-tight">
+              <span class="block text-[13px] font-extrabold">3 languages</span>
+              <span class="block text-[11.5px] text-ink-400 font-medium">English &middot; Punjabi &middot; Urdu</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust badges -->
+  <div class="relative border-t border-white/10 bg-ink-950/60 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4">
+        <div class="reveal flex items-center gap-3.5 px-2 py-6 sm:px-5 border-r border-b lg:border-b-0 border-white/10">
+          <span class="shrink-0 flex items-center justify-center w-11 h-11 rounded-xl bg-clinic-500/15 border border-clinic-400/20">
+            <svg class="w-5 h-5 text-clinic-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5c-1.5-1.5-3-2-4.5-2C5 3.5 3 5.5 3 9c0 4 1.5 7 2.5 9.5.6 1.5 1.2 2 2 2 1 0 1.4-.8 1.8-2.3l.9-3.2c.2-.7.5-1 1.3-1s1.1.3 1.3 1l.9 3.2c.4 1.5.8 2.3 1.8 2.3.8 0 1.4-.5 2-2C18.5 16 20 13 20 9c0-3.5-2-5.5-4.5-5.5-1.5 0-3 .5-4.5 2Z"/></svg>
+          </span>
+          <p class="text-[13.5px] sm:text-[14.5px] font-bold text-white leading-snug">Family &amp; Cosmetic Care</p>
+        </div>
+        <div class="reveal flex items-center gap-3.5 px-2 py-6 sm:px-5 border-b lg:border-b-0 lg:border-r border-white/10" style="transition-delay:.08s">
+          <span class="shrink-0 flex items-center justify-center w-11 h-11 rounded-xl bg-clinic-500/15 border border-clinic-400/20">
+            <svg class="w-5 h-5 text-clinic-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/></svg>
+          </span>
+          <p class="text-[13.5px] sm:text-[14.5px] font-bold text-white leading-snug">Patient-Centered Comfort</p>
+        </div>
+        <div class="reveal flex items-center gap-3.5 px-2 py-6 sm:px-5 border-r border-white/10" style="transition-delay:.16s">
+          <span class="shrink-0 flex items-center justify-center w-11 h-11 rounded-xl bg-clinic-500/15 border border-clinic-400/20">
+            <svg class="w-5 h-5 text-clinic-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </span>
+          <p class="text-[13.5px] sm:text-[14.5px] font-bold text-white leading-snug">Accepting New Patients</p>
+        </div>
+        <div class="reveal flex items-center gap-3.5 px-2 py-6 sm:px-5" style="transition-delay:.24s">
+          <span class="shrink-0 flex items-center justify-center w-11 h-11 rounded-xl bg-clinic-500/15 border border-clinic-400/20">
+            <svg class="w-5 h-5 text-clinic-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <p class="text-[13.5px] sm:text-[14.5px] font-bold text-white leading-snug">Convenient Markham Location</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES MARQUEE ============ -->
+<div class="bg-clinic-600 text-white py-4 overflow-hidden">
+  <div class="marquee">
+    <div class="marquee-track flex w-max items-center gap-10 text-[14.5px] font-semibold whitespace-nowrap" aria-hidden="true">
+      <!-- set 1 -->
+      <span class="flex items-center gap-10"><span>Checkups &amp; Cleanings</span><span class="text-clinic-200">✦</span><span>Teeth Whitening</span><span class="text-clinic-200">✦</span><span>Tooth-Coloured Fillings</span><span class="text-clinic-200">✦</span><span>Crowns &amp; Bridges</span><span class="text-clinic-200">✦</span><span>Wisdom Teeth Removal</span><span class="text-clinic-200">✦</span><span>Dentures</span><span class="text-clinic-200">✦</span><span>Implant-Supported Dentures</span><span class="text-clinic-200">✦</span><span>Gum &amp; Bone Therapy</span><span class="text-clinic-200">✦</span><span>Kids' Dentistry</span><span class="text-clinic-200">✦</span><span>Emergency Care</span><span class="text-clinic-200">✦</span></span>
+      <!-- set 2 (duplicate for seamless loop) -->
+      <span class="flex items-center gap-10"><span>Checkups &amp; Cleanings</span><span class="text-clinic-200">✦</span><span>Teeth Whitening</span><span class="text-clinic-200">✦</span><span>Tooth-Coloured Fillings</span><span class="text-clinic-200">✦</span><span>Crowns &amp; Bridges</span><span class="text-clinic-200">✦</span><span>Wisdom Teeth Removal</span><span class="text-clinic-200">✦</span><span>Dentures</span><span class="text-clinic-200">✦</span><span>Implant-Supported Dentures</span><span class="text-clinic-200">✦</span><span>Gum &amp; Bone Therapy</span><span class="text-clinic-200">✦</span><span>Kids' Dentistry</span><span class="text-clinic-200">✦</span><span>Emergency Care</span><span class="text-clinic-200">✦</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="py-24 sm:py-28 bg-[#EEF2F6]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+      <div class="reveal max-w-2xl">
+        <p class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.18em] text-clinic-700">
+          <span class="w-6 h-px bg-clinic-500"></span> Our Services
+        </p>
+        <h2 class="mt-4 text-[2.1rem] sm:text-[2.7rem] leading-[1.15] font-extrabold tracking-[-0.025em] text-ink-900">
+          Complete dentistry, <span class="text-clinic-600">all under one roof</span>
+        </h2>
+        <p class="mt-5 text-[17px] leading-[1.75] text-ink-400 font-body">
+          From <strong class="text-ink-800">routine cleanings</strong> to <strong class="text-ink-800">full mouth reconstruction</strong>, our team delivers modern care with a <strong class="text-ink-800">gentle touch</strong> — so your whole family can be seen in one familiar place.
+        </p>
+      </div>
+      <button data-open-modal class="reveal btn-primary self-start lg:self-auto inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-ink-900 hover:bg-ink-800 text-white text-sm font-bold">
+        Book a service
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+
+      <article class="reveal card-hover group relative overflow-hidden rounded-2xl bg-white border border-slate-200/70 shadow-card hover:shadow-lift p-7">
+        <span class="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-clinic-50 transition-transform duration-500 group-hover:scale-150" aria-hidden="true"></span>
+        <span class="relative flex items-center justify-center w-[54px] h-[54px] rounded-2xl bg-clinic-50 border border-clinic-100 group-hover:bg-clinic-600 group-hover:border-clinic-600 transition-colors duration-300">
+          <svg class="icon-spin-hover w-6 h-6 text-clinic-600 group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <h3 class="relative mt-6 text-[19px] font-extrabold text-ink-900 tracking-tight">Preventative Dentistry</h3>
+        <p class="relative mt-3 text-[15px] leading-[1.7] text-ink-400 font-body">Regular <strong class="text-ink-800 font-semibold">checkups</strong>, gentle <strong class="text-ink-800 font-semibold">cleanings</strong>, digital X-rays, and cavity prevention.</p>
+      </article>
+
+      <article class="reveal card-hover group relative overflow-hidden rounded-2xl bg-white border border-slate-200/70 shadow-card hover:shadow-lift p-7" style="transition-delay:.06s">
+        <span class="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-amber-50 transition-transform duration-500 group-hover:scale-150" aria-hidden="true"></span>
+        <span class="relative flex items-center justify-center w-[54px] h-[54px] rounded-2xl bg-amber-50 border border-amber-100 group-hover:bg-amber-500 group-hover:border-amber-500 transition-colors duration-300">
+          <svg class="icon-spin-hover w-6 h-6 text-amber-600 group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.2 5.1 5.5.5-4.2 3.7 1.3 5.4L12 14.9 7.2 17.7l1.3-5.4-4.2-3.7 5.5-.5Z"/></svg>
+        </span>
+        <h3 class="relative mt-6 text-[19px] font-extrabold text-ink-900 tracking-tight">Cosmetic Dentistry</h3>
+        <p class="relative mt-3 text-[15px] leading-[1.7] text-ink-400 font-body"><strong class="text-ink-800 font-semibold">Teeth whitening</strong>, dental <strong class="text-ink-800 font-semibold">veneers</strong>, and complete smile transformations.</p>
+      </article>
+
+      <article class="reveal card-hover group relative overflow-hidden rounded-2xl bg-white border border-slate-200/70 shadow-card hover:shadow-lift p-7" style="transition-delay:.12s">
+        <span class="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-sky-50 transition-transform duration-500 group-hover:scale-150" aria-hidden="true"></span>
+        <span class="relative flex items-center justify-center w-[54px] h-[54px] rounded-2xl bg-sky-50 border border-sky-100 group-hover:bg-sky-600 group-hover:border-sky-600 transition-colors duration-300">
+          <svg class="icon-spin-hover w-6 h-6 text-sky-600 group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg>
+        </span>
+        <h3 class="relative mt-6 text-[19px] font-extrabold text-ink-900 tracking-tight">Restorative Care</h3>
+        <p class="relative mt-3 text-[15px] leading-[1.7] text-ink-400 font-body">Durable dental <strong class="text-ink-800 font-semibold">crowns</strong>, <strong class="text-ink-800 font-semibold">bridges</strong>, and natural-looking tooth-coloured fillings.</p>
+      </article>
+
+      <article class="reveal card-hover group relative overflow-hidden rounded-2xl bg-white border border-slate-200/70 shadow-card hover:shadow-lift p-7" style="transition-delay:.18s">
+        <span class="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-rose-50 transition-transform duration-500 group-hover:scale-150" aria-hidden="true"></span>
+        <span class="relative flex items-center justify-center w-[54px] h-[54px] rounded-2xl bg-rose-50 border border-rose-100 group-hover:bg-rose-500 group-hover:border-rose-500 transition-colors duration-300">
+          <svg class="icon-spin-hover w-6 h-6 text-rose-600 group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 8-4-16-3 8H2"/></svg>
+        </span>
+        <h3 class="relative mt-6 text-[19px] font-extrabold text-ink-900 tracking-tight">Emergency Dental Care</h3>
+        <p class="relative mt-3 text-[15px] leading-[1.7] text-ink-400 font-body"><strong class="text-ink-800 font-semibold">Prompt relief</strong> for toothaches, chipped teeth, or urgent dental issues.</p>
+      </article>
+
+      <article class="reveal card-hover group relative overflow-hidden rounded-2xl bg-white border border-slate-200/70 shadow-card hover:shadow-lift p-7" style="transition-delay:.24s">
+        <span class="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-violet-50 transition-transform duration-500 group-hover:scale-150" aria-hidden="true"></span>
+        <span class="relative flex items-center justify-center w-[54px] h-[54px] rounded-2xl bg-violet-50 border border-violet-100 group-hover:bg-violet-500 group-hover:border-violet-500 transition-colors duration-300">
+          <svg class="icon-spin-hover w-6 h-6 text-violet-600 group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </span>
+        <h3 class="relative mt-6 text-[19px] font-extrabold text-ink-900 tracking-tight">Pediatric &amp; Family Dentistry</h3>
+        <p class="relative mt-3 text-[15px] leading-[1.7] text-ink-400 font-body">A gentle, <strong class="text-ink-800 font-semibold">stress-free</strong> environment tailored for <strong class="text-ink-800 font-semibold">kids and adults</strong> alike.</p>
+      </article>
+
+      <article class="reveal card-hover group relative overflow-hidden rounded-2xl bg-white border border-slate-200/70 shadow-card hover:shadow-lift p-7" style="transition-delay:.3s">
+        <span class="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-emerald-50 transition-transform duration-500 group-hover:scale-150" aria-hidden="true"></span>
+        <span class="relative flex items-center justify-center w-[54px] h-[54px] rounded-2xl bg-emerald-50 border border-emerald-100 group-hover:bg-emerald-600 group-hover:border-emerald-600 transition-colors duration-300">
+          <svg class="icon-spin-hover w-6 h-6 text-emerald-600 group-hover:text-white transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        </span>
+        <h3 class="relative mt-6 text-[19px] font-extrabold text-ink-900 tracking-tight">Periodontal Health</h3>
+        <p class="relative mt-3 text-[15px] leading-[1.7] text-ink-400 font-body">Comprehensive <strong class="text-ink-800 font-semibold">gum disease treatment</strong>, gum &amp; bone therapy, and long-term oral maintenance.</p>
+      </article>
+    </div>
+
+    <!-- Additional services -->
+    <div class="reveal mt-6 rounded-2xl bg-white border border-slate-200/70 shadow-card p-6 sm:p-7 flex flex-col md:flex-row md:items-center gap-5">
+      <p class="shrink-0 text-[13px] font-bold uppercase tracking-[.14em] text-ink-400">Also offered</p>
+      <div class="flex flex-wrap gap-2.5">
+        <span class="px-3.5 py-2 rounded-full bg-[#EEF2F6] border border-slate-200 text-[13.5px] font-semibold text-ink-800">Wisdom Teeth Removal <span class="text-ink-400 font-medium">(oral sedation available)</span></span>
+        <span class="px-3.5 py-2 rounded-full bg-[#EEF2F6] border border-slate-200 text-[13.5px] font-semibold text-ink-800">Dentures</span>
+        <span class="px-3.5 py-2 rounded-full bg-[#EEF2F6] border border-slate-200 text-[13.5px] font-semibold text-ink-800">Implant-Supported Dentures</span>
+        <span class="px-3.5 py-2 rounded-full bg-[#EEF2F6] border border-slate-200 text-[13.5px] font-semibold text-ink-800">Full Mouth Reconstruction</span>
+        <span class="px-3.5 py-2 rounded-full bg-[#EEF2F6] border border-slate-200 text-[13.5px] font-semibold text-ink-800">Tooth-Coloured Fillings</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAMILY ============ -->
+<section id="family" class="py-24 sm:py-28 bg-white border-y border-slate-200/70">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="reveal text-center max-w-2xl mx-auto">
+      <p class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.18em] text-clinic-700">
+        <span class="w-6 h-px bg-clinic-500"></span> Patient Care <span class="w-6 h-px bg-clinic-500"></span>
+      </p>
+      <h2 class="mt-4 text-[2.1rem] sm:text-[2.7rem] leading-[1.15] font-extrabold tracking-[-0.025em] text-ink-900">
+        One dental home for <span class="text-clinic-600">every generation</span>
+      </h2>
+      <p class="mt-5 text-[17px] leading-[1.75] text-ink-400 font-body">
+        Book the <strong class="text-ink-800">whole family</strong> together, back-to-back — and let us explain every step in <strong class="text-ink-800">the language you're most comfortable with</strong>.
+      </p>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-5 sm:gap-6">
+      <div class="reveal card-hover group rounded-[1.5rem] bg-gradient-to-b from-sky2-100 to-white border border-sky-100 p-8 text-center">
+        <span class="icon-wiggle mx-auto flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-card text-4xl" aria-hidden="true">🧒</span>
+        <h3 class="mt-6 text-xl font-extrabold text-ink-900">Kids &amp; Teens</h3>
+        <p class="mt-3 text-[15px] leading-[1.7] text-ink-400 font-body">Friendly first visits, <strong class="text-ink-800 font-semibold">cavity prevention</strong> and patient explanations that help kids <strong class="text-ink-800 font-semibold">feel brave</strong>, not nervous.</p>
+      </div>
+      <div class="reveal card-hover group rounded-[1.5rem] bg-gradient-to-b from-clinic-50 to-white border border-clinic-100 p-8 text-center" style="transition-delay:.08s">
+        <span class="icon-wiggle mx-auto flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-card text-4xl" aria-hidden="true">🧑‍💼</span>
+        <h3 class="mt-6 text-xl font-extrabold text-ink-900">Adults</h3>
+        <p class="mt-3 text-[15px] leading-[1.7] text-ink-400 font-body"><strong class="text-ink-800 font-semibold">Cleanings, whitening, crowns</strong> and <strong class="text-ink-800 font-semibold">Saturday appointments</strong> that fit around work and school runs.</p>
+      </div>
+      <div class="reveal card-hover group rounded-[1.5rem] bg-gradient-to-b from-amber-50 to-white border border-amber-100 p-8 text-center" style="transition-delay:.16s">
+        <span class="icon-wiggle mx-auto flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-card text-4xl" aria-hidden="true">👵</span>
+        <h3 class="mt-6 text-xl font-extrabold text-ink-900">Seniors</h3>
+        <p class="mt-3 text-[15px] leading-[1.7] text-ink-400 font-body"><strong class="text-ink-800 font-semibold">Dentures</strong>, <strong class="text-ink-800 font-semibold">implant-supported dentures</strong> and gum care, with barrier-free, ground-floor access.</p>
+      </div>
+    </div>
+
+    <!-- Fact strip -->
+    <div class="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="reveal rounded-2xl bg-ink-900 text-white p-6">
+        <p class="text-4xl font-extrabold tracking-tight"><span data-count="11">0</span>+</p>
+        <p class="mt-1.5 text-[13.5px] text-slate-400 font-body">Dental services offered</p>
+      </div>
+      <div class="reveal rounded-2xl bg-ink-900 text-white p-6" style="transition-delay:.06s">
+        <p class="text-4xl font-extrabold tracking-tight"><span data-count="3">0</span></p>
+        <p class="mt-1.5 text-[13.5px] text-slate-400 font-body">Languages spoken</p>
+      </div>
+      <div class="reveal rounded-2xl bg-ink-900 text-white p-6" style="transition-delay:.12s">
+        <p class="text-4xl font-extrabold tracking-tight"><span data-count="5">0</span></p>
+        <p class="mt-1.5 text-[13.5px] text-slate-400 font-body">Days open each week</p>
+      </div>
+      <div class="reveal rounded-2xl bg-clinic-600 text-white p-6" style="transition-delay:.18s">
+        <p class="text-4xl font-extrabold tracking-tight">Sat</p>
+        <p class="mt-1.5 text-[13.5px] text-clinic-100 font-body">Weekend hours, 10 AM – 4 PM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY (dark) ============ -->
+<section id="why" class="relative py-24 sm:py-28 bg-ink-900 text-white overflow-hidden">
+  <div class="absolute inset-0 dot-grid opacity-40" aria-hidden="true"></div>
+  <div class="absolute -top-40 -left-40 w-[480px] h-[480px] rounded-full bg-clinic-600/20 blur-3xl" aria-hidden="true"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
+
+      <div>
+        <p class="reveal inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.18em] text-clinic-300">
+          <span class="w-6 h-px bg-clinic-400"></span> Why Dr. Pushpa &amp; Associates
+        </p>
+        <h2 class="reveal mt-4 text-[2.1rem] sm:text-[2.7rem] leading-[1.15] font-extrabold tracking-[-0.025em]">
+          A practice built around <span class="text-clinic-300">how you feel</span>
+        </h2>
+        <p class="reveal mt-5 text-[17px] leading-[1.75] text-slate-300 font-body max-w-lg">
+          Led by <strong class="text-white">Dr. Pushpa Vannithamby</strong>, our clinic is designed so that dentistry never feels <strong class="text-white">rushed</strong> or <strong class="text-white">intimidating</strong> — from sterilization to the way we explain your treatment plan.
+        </p>
+
+        <ul class="mt-10 space-y-3.5">
+          <li class="reveal group flex items-start gap-4 p-5 rounded-2xl bg-white/[.04] border border-white/10 hover:bg-white/[.07] hover:border-clinic-400/40 transition-all duration-300">
+            <span class="shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-clinic-500 group-hover:rotate-12 transition-transform duration-300">
+              <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <h3 class="text-[16px] font-bold">Experienced &amp; Compassionate Team</h3>
+              <p class="mt-1.5 text-[14.5px] leading-[1.65] text-slate-400 font-body">A <strong class="text-slate-200 font-semibold">multilingual team</strong> that takes the time to listen before they treat.</p>
+            </div>
+          </li>
+          <li class="reveal group flex items-start gap-4 p-5 rounded-2xl bg-white/[.04] border border-white/10 hover:bg-white/[.07] hover:border-clinic-400/40 transition-all duration-300" style="transition-delay:.06s">
+            <span class="shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-clinic-500 group-hover:rotate-12 transition-transform duration-300">
+              <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <h3 class="text-[16px] font-bold">State-of-the-Art Technology &amp; Sterilization</h3>
+              <p class="mt-1.5 text-[14.5px] leading-[1.65] text-slate-400 font-body"><strong class="text-slate-200 font-semibold">Digital X-rays</strong> and <strong class="text-slate-200 font-semibold">strict instrument sterilization</strong> on every visit.</p>
+            </div>
+          </li>
+          <li class="reveal group flex items-start gap-4 p-5 rounded-2xl bg-white/[.04] border border-white/10 hover:bg-white/[.07] hover:border-clinic-400/40 transition-all duration-300" style="transition-delay:.12s">
+            <span class="shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-clinic-500 group-hover:rotate-12 transition-transform duration-300">
+              <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <h3 class="text-[16px] font-bold">Transparent Treatment Plans &amp; Direct Insurance Billing Support</h3>
+              <p class="mt-1.5 text-[14.5px] leading-[1.65] text-slate-400 font-body"><strong class="text-slate-200 font-semibold">Clear costs before we begin</strong>, and help submitting claims to your provider.</p>
+            </div>
+          </li>
+          <li class="reveal group flex items-start gap-4 p-5 rounded-2xl bg-white/[.04] border border-white/10 hover:bg-white/[.07] hover:border-clinic-400/40 transition-all duration-300" style="transition-delay:.18s">
+            <span class="shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-clinic-500 group-hover:rotate-12 transition-transform duration-300">
+              <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <div>
+              <h3 class="text-[16px] font-bold">Relaxing, Anxiety-Free Clinic Environment</h3>
+              <p class="mt-1.5 text-[14.5px] leading-[1.65] text-slate-400 font-body">Gentle technique and <strong class="text-slate-200 font-semibold">oral sedation options</strong> for nervous patients.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- First visit card -->
+      <div class="reveal lg:sticky lg:top-28" style="transition-delay:.1s">
+        <div class="relative rounded-[1.75rem] bg-white text-ink-900 shadow-modal overflow-hidden">
+          <div class="h-1.5 bg-gradient-to-r from-clinic-400 via-clinic-600 to-sky-400"></div>
+          <div class="p-8 sm:p-10">
+            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-clinic-50 border border-clinic-100 text-clinic-700 text-[11px] font-bold uppercase tracking-[.15em]">Your First Visit</span>
+            <h3 class="mt-5 text-[1.7rem] sm:text-[2rem] leading-tight font-extrabold tracking-tight">What to expect, <span class="text-clinic-600">step by step</span></h3>
+            <p class="mt-3 text-[15.5px] leading-[1.75] text-ink-400 font-body">Knowing what happens next is the <strong class="text-ink-800">fastest way to relax</strong>.</p>
+
+            <ol class="mt-8 relative space-y-6 before:absolute before:left-[17px] before:top-2 before:bottom-2 before:w-px before:bg-slate-200">
+              <li class="relative flex gap-4">
+                <span class="shrink-0 z-10 flex items-center justify-center w-9 h-9 rounded-xl bg-clinic-600 text-white text-[13px] font-extrabold">1</span>
+                <div><p class="text-[15px] font-bold">Warm welcome &amp; health history</p><p class="mt-1 text-[14px] leading-[1.65] text-ink-400 font-body">A short intake covering your <strong class="text-ink-800 font-semibold">medical background</strong> and comfort level.</p></div>
+              </li>
+              <li class="relative flex gap-4">
+                <span class="shrink-0 z-10 flex items-center justify-center w-9 h-9 rounded-xl bg-clinic-600 text-white text-[13px] font-extrabold">2</span>
+                <div><p class="text-[15px] font-bold">Gentle comprehensive exam</p><p class="mt-1 text-[14px] leading-[1.65] text-ink-400 font-body">Teeth, gums and bite, with <strong class="text-ink-800 font-semibold">digital X-rays</strong> if needed.</p></div>
+              </li>
+              <li class="relative flex gap-4">
+                <span class="shrink-0 z-10 flex items-center justify-center w-9 h-9 rounded-xl bg-clinic-600 text-white text-[13px] font-extrabold">3</span>
+                <div><p class="text-[15px] font-bold">Your plan, explained plainly</p><p class="mt-1 text-[14px] leading-[1.65] text-ink-400 font-body">Findings, options and costs — <strong class="text-ink-800 font-semibold">no pressure, no surprises</strong>.</p></div>
+              </li>
+              <li class="relative flex gap-4">
+                <span class="shrink-0 z-10 flex items-center justify-center w-9 h-9 rounded-xl bg-clinic-600 text-white text-[13px] font-extrabold">4</span>
+                <div><p class="text-[15px] font-bold">Cleaning &amp; next steps</p><p class="mt-1 text-[14px] leading-[1.65] text-ink-400 font-body">Leave with a <strong class="text-ink-800 font-semibold">clear follow-up schedule</strong>.</p></div>
+              </li>
+            </ol>
+
+            <div class="mt-8 p-4 rounded-2xl bg-[#EEF2F6] text-[13.5px] leading-[1.6] text-ink-600 font-body">
+              <strong class="text-ink-900">Please bring:</strong> your insurance card, photo ID and a list of current medications.
+            </div>
+            <button data-open-modal class="btn-primary mt-5 w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-clinic-600 hover:bg-clinic-700 text-white font-bold shadow-lift">
+              Book Your First Visit
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCATION & HOURS ============ -->
+<section id="location" class="py-24 sm:py-28 bg-[#EEF2F6]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="reveal max-w-2xl">
+      <p class="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[.18em] text-clinic-700">
+        <span class="w-6 h-px bg-clinic-500"></span> Location &amp; Hours
+      </p>
+      <h2 class="mt-4 text-[2.1rem] sm:text-[2.7rem] leading-[1.15] font-extrabold tracking-[-0.025em] text-ink-900">
+        Visit us on <span class="text-clinic-600">Markham Road</span>
+      </h2>
+      <p class="mt-5 text-[17px] leading-[1.75] text-ink-400 font-body">
+        <strong class="text-ink-800">Easy to reach</strong>, <strong class="text-ink-800">easy to park</strong>, and <strong class="text-ink-800">barrier-free</strong> — just north of the Toronto border in Markham.
+      </p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-3 gap-5 sm:gap-6">
+
+      <!-- Address -->
+      <div class="reveal card-hover rounded-2xl bg-white border border-slate-200/70 shadow-card p-7 sm:p-8">
+        <span class="flex items-center justify-center w-[54px] h-[54px] rounded-2xl bg-clinic-50 border border-clinic-100">
+          <svg class="w-6 h-6 text-clinic-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <h3 class="mt-6 text-[19px] font-extrabold text-ink-900 tracking-tight">Address &amp; Contact</h3>
+
+        <address class="mt-5 not-italic space-y-4">
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-[.14em] text-ink-400">Clinic address</p>
+            <p class="mt-1.5 text-[15.5px] font-semibold text-ink-800 leading-relaxed">7595 Markham Road, <strong class="text-ink-900">Unit 4</strong><br/>Markham, ON L3S 0B6</p>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-[.14em] text-ink-400">Phone</p>
+            <a href="tel:+19052018900" class="mt-1.5 inline-flex items-center gap-2 text-[20px] font-extrabold text-clinic-600 hover:text-clinic-700 transition tabular-nums">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+              (905) 201-8900
+            </a>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-[.14em] text-ink-400">Languages</p>
+            <p class="mt-1.5 text-[15px] font-semibold text-ink-800">English &middot; Punjabi &middot; Urdu</p>
+          </div>
+        </address>
+
+        <div class="mt-6 pt-6 border-t border-slate-100 space-y-3">
+          <p class="flex items-start gap-3 text-[14.5px] leading-[1.6] text-ink-400 font-body">
+            <svg class="w-[18px] h-[18px] text-clinic-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+            <span><strong class="text-ink-800 font-semibold">Free plaza parking</strong> steps from the clinic door.</span>
+          </p>
+          <p class="flex items-start gap-3 text-[14.5px] leading-[1.6] text-ink-400 font-body">
+            <svg class="w-[18px] h-[18px] text-clinic-600 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="4" r="1"/><path d="m18 19 1-7-6 1"/><path d="m5 8 3-3 5.5 3-2.36 3.5"/><path d="M4.24 14.5a5 5 0 0 0 6.88 6"/><path d="M13.76 17.5a5 5 0 0 0-6.88-6"/></svg>
+            <span><strong class="text-ink-800 font-semibold">Ground-floor access</strong> — no stairs to your appointment.</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Hours -->
+      <div class="reveal card-hover rounded-2xl bg-ink-900 text-white border border-ink-800 shadow-card p-7 sm:p-8" style="transition-delay:.08s">
+        <div class="flex items-start justify-between gap-3">
+          <span class="flex items-center justify-center w-[54px] h-[54px] rounded-2xl bg-clinic-500/15 border border-clinic-400/25">
+            <svg class="w-6 h-6 text-clinic-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          </span>
+          <span id="hoursBadge" class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-[12px] font-bold text-slate-200">
+            <span id="hoursBadgeDot" class="relative flex w-2 h-2 rounded-full text-slate-400 bg-slate-400"></span>
+            <span id="hoursBadgeText">Checking…</span>
+          </span>
+        </div>
+        <h3 class="mt-6 text-[19px] font-extrabold tracking-tight">Operating Hours</h3>
+
+        <dl id="hoursList" class="mt-4 space-y-1">
+          <div class="hours-row flex items-center justify-between py-2.5 px-3 -mx-3 rounded-lg" data-day="1"><dt class="text-[14.5px] text-slate-300">Monday</dt><dd class="text-[14.5px] font-bold tabular-nums">10:00 AM – 6:00 PM</dd></div>
+          <div class="hours-row flex items-center justify-between py-2.5 px-3 -mx-3 rounded-lg" data-day="2"><dt class="text-[14.5px] text-slate-300">Tuesday</dt><dd class="text-[14.5px] font-bold tabular-nums">10:00 AM – 6:00 PM</dd></div>
+          <div class="hours-row flex items-center justify-between py-2.5 px-3 -mx-3 rounded-lg" data-day="3"><dt class="text-[14.5px] text-slate-500">Wednesday</dt><dd class="text-[14.5px] font-semibold text-slate-500">Closed</dd></div>
+          <div class="hours-row flex items-center justify-between py-2.5 px-3 -mx-3 rounded-lg" data-day="4"><dt class="text-[14.5px] text-slate-300">Thursday</dt><dd class="text-[14.5px] font-bold tabular-nums">10:00 AM – 6:00 PM</dd></div>
+          <div class="hours-row flex items-center justify-between py-2.5 px-3 -mx-3 rounded-lg" data-day="5"><dt class="text-[14.5px] text-slate-300">Friday</dt><dd class="text-[14.5px] font-bold tabular-nums">10:00 AM – 6:00 PM</dd></div>
+          <div class="hours-row flex items-center justify-between py-2.5 px-3 -mx-3 rounded-lg" data-day="6"><dt class="text-[14.5px] text-slate-300">Saturday</dt><dd class="text-[14.5px] font-bold text-clinic-300 tabular-nums">10:00 AM – 4:00 PM</dd></div>
+          <div class="hours-row flex items-center justify-between py-2.5 px-3 -mx-3 rounded-lg" data-day="0"><dt class="text-[14.5px] text-slate-500">Sunday</dt><dd class="text-[14.5px] font-semibold text-slate-500">Closed</dd></div>
+        </dl>
+
+        <p class="mt-4 text-[12.5px] leading-[1.6] text-slate-500 font-body">Hours may change on holidays — please <strong class="text-slate-300">call to confirm</strong>.</p>
+
+        <button data-open-modal class="btn-primary mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-clinic-500 hover:bg-clinic-600 text-white text-sm font-bold shadow-glow">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Request a Time
+        </button>
+      </div>
+
+      <!-- Map -->
+      <div class="reveal rounded-2xl bg-white border border-slate-200/70 shadow-card overflow-hidden flex flex-col" style="transition-delay:.16s">
+        <div class="p-7 sm:p-8 pb-5">
+          <span class="flex items-center justify-center w-[54px] h-[54px] rounded-2xl bg-clinic-50 border border-clinic-100">
+            <svg class="w-6 h-6 text-clinic-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 3 6v15l6-3 6 3 6-3V3l-6 3Z"/><path d="M9 3v15M15 6v15"/></svg>
+          </span>
+          <h3 class="mt-6 text-[19px] font-extrabold text-ink-900 tracking-tight">Find Us on the Map</h3>
+          <p class="mt-2.5 text-[14.5px] leading-[1.65] text-ink-400 font-body"><strong class="text-ink-800 font-semibold">7595 Markham Rd, Unit 4</strong> — look for Dr. Pushpa &amp; Associate's in the plaza.</p>
+        </div>
+        <div class="relative flex-1 min-h-[260px] border-t border-slate-100 bg-slate-100">
+          <iframe
+            title="Map showing Dr. Pushpa and Associates at 7595 Markham Road, Unit 4, Markham, Ontario"
+            src="https://maps.google.com/maps?q=Dr.%20Pushpa%20%26%20Associate's%2C%207595%20Markham%20Rd%20%234%2C%20Markham%2C%20ON%20L3S%200B6&ll=43.8505253,-79.2538368&z=16&output=embed"
+            class="absolute inset-0 w-full h-full" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="p-5 border-t border-slate-100">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Dr.+Pushpa+%26+Associate's+7595+Markham+Rd+Unit+4+Markham+ON+L3S+0B6" target="_blank" rel="noopener noreferrer"
+             class="group w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl border-2 border-slate-200 hover:border-clinic-500 hover:bg-clinic-50 hover:text-clinic-700 text-ink-900 text-sm font-bold transition-all duration-300">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            Get Directions
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="pb-24 bg-[#EEF2F6]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="reveal relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-clinic-600 via-clinic-700 to-ink-900 shadow-lift">
+      <div class="absolute inset-0 dot-grid opacity-30" aria-hidden="true"></div>
+      <!-- rotating ring decoration -->
+      <div class="absolute -right-24 -top-24 w-80 h-80 rounded-full border-[18px] border-white/[.07] orbit-slow" aria-hidden="true"></div>
+      <div class="absolute -right-6 -top-6 w-44 h-44 rounded-full border-2 border-dashed border-white/20 orbit" aria-hidden="true"></div>
+
+      <div class="relative px-7 sm:px-12 py-12 sm:py-16 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-9">
+        <div class="max-w-xl">
+          <h2 class="text-[1.9rem] sm:text-[2.6rem] leading-[1.12] font-extrabold tracking-[-0.025em] text-white">
+            Ready for a <span class="text-clinic-200">Healthier, Brighter</span> Smile?
+          </h2>
+          <p class="mt-4 text-[16.5px] leading-[1.7] text-clinic-50/90 font-body">
+            Request online in <strong class="text-white">under a minute</strong> — our team will <strong class="text-white">call you back</strong> to confirm a time that works.
+          </p>
+        </div>
+        <div class="shrink-0 flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+          <button data-open-modal class="btn-primary inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-white text-clinic-700 font-bold hover:bg-clinic-50 shadow-lg">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Schedule Your Visit Today
+          </button>
+          <a href="tel:+19052018900" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl border-2 border-white/30 hover:border-white/70 hover:bg-white/10 text-white font-bold transition-all duration-300 tabular-nums">
+            (905) 201-8900
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink-950 text-slate-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="flex items-center justify-center w-11 h-11 rounded-2xl bg-clinic-600">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5c-1.5-1.5-3-2-4.5-2C5 3.5 3 5.5 3 9c0 4 1.5 7 2.5 9.5.6 1.5 1.2 2 2 2 1 0 1.4-.8 1.8-2.3l.9-3.2c.2-.7.5-1 1.3-1s1.1.3 1.3 1l.9 3.2c.4 1.5.8 2.3 1.8 2.3.8 0 1.4-.5 2-2C18.5 16 20 13 20 9c0-3.5-2-5.5-4.5-5.5-1.5 0-3 .5-4.5 2Z"/></svg>
+          </span>
+          <span class="leading-tight">
+            <span class="block font-extrabold text-[16px] text-white tracking-tight">Dr. Pushpa &amp; Associates</span>
+            <span class="block text-[11px] font-medium tracking-[.14em] uppercase text-clinic-400">Dental Practice</span>
+          </span>
+        </div>
+        <p class="mt-5 text-[14.5px] leading-[1.7] font-body max-w-xs">Gentle, comprehensive <strong class="text-slate-200 font-semibold">family dentistry</strong> serving Markham, Scarborough and surrounding communities.</p>
+      </div>
+
+      <div>
+        <h3 class="text-[12px] font-bold uppercase tracking-[.16em] text-white">Quick Links</h3>
+        <ul class="mt-5 space-y-3 text-[14.5px] font-body">
+          <li><a href="#services" class="hover:text-clinic-400 transition-colors">Services</a></li>
+          <li><a href="#family" class="hover:text-clinic-400 transition-colors">Patient Care</a></li>
+          <li><a href="#why" class="hover:text-clinic-400 transition-colors">Why Choose Us</a></li>
+          <li><a href="#location" class="hover:text-clinic-400 transition-colors">Location &amp; Hours</a></li>
+          <li><button data-open-modal class="hover:text-clinic-400 transition-colors">Request Appointment</button></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-[12px] font-bold uppercase tracking-[.16em] text-white">Contact</h3>
+        <ul class="mt-5 space-y-3 text-[14.5px] font-body">
+          <li><a href="tel:+19052018900" class="font-bold text-white hover:text-clinic-400 transition-colors tabular-nums">(905) 201-8900</a></li>
+          <li class="leading-relaxed">7595 Markham Road, Unit 4<br/>Markham, ON L3S 0B6</li>
+          <li><a href="https://www.google.com/maps/dir/?api=1&destination=Dr.+Pushpa+%26+Associate's+7595+Markham+Rd+Unit+4+Markham+ON+L3S+0B6" target="_blank" rel="noopener noreferrer" class="hover:text-clinic-400 transition-colors">Get Directions &rarr;</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-[12px] font-bold uppercase tracking-[.16em] text-white">Hours</h3>
+        <ul class="mt-5 space-y-2.5 text-[14px] font-body">
+          <li class="flex justify-between gap-4"><span>Mon &ndash; Tue</span><span class="text-white font-semibold tabular-nums">10 AM &ndash; 6 PM</span></li>
+          <li class="flex justify-between gap-4"><span>Wednesday</span><span>Closed</span></li>
+          <li class="flex justify-between gap-4"><span>Thu &ndash; Fri</span><span class="text-white font-semibold tabular-nums">10 AM &ndash; 6 PM</span></li>
+          <li class="flex justify-between gap-4"><span>Saturday</span><span class="text-white font-semibold tabular-nums">10 AM &ndash; 4 PM</span></li>
+          <li class="flex justify-between gap-4"><span>Sunday</span><span>Closed</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <p class="text-[13px] font-body">&copy; <span id="year">2026</span> Dr. Pushpa &amp; Associates. All rights reserved.</p>
+      <p class="text-[13px] font-body text-slate-500 max-w-xl sm:text-right">Dr. Pushpa &amp; Associates Dental Practice. Proudly serving the Markham community. Information on this site is for general education and is not a substitute for professional dental advice.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ APPOINTMENT MODAL ============ -->
+<div id="apptModal" class="hidden-modal fixed inset-0 z-[80] flex items-end sm:items-center justify-center sm:p-6" role="dialog" aria-modal="true" aria-labelledby="apptTitle">
+  <div id="modalBackdrop" class="absolute inset-0 bg-ink-950/60 backdrop-blur-md" aria-hidden="true"></div>
+
+  <div class="modal-panel relative w-full sm:max-w-lg max-h-[92vh] overflow-y-auto nice-scroll bg-white rounded-t-[1.75rem] sm:rounded-[1.75rem] shadow-modal">
+    <div class="sticky top-0 z-10 bg-ink-900 text-white px-6 sm:px-8 pt-7 pb-6 rounded-t-[1.75rem]">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <p class="text-[11px] font-bold uppercase tracking-[.16em] text-clinic-300">Appointment Request</p>
+          <h2 id="apptTitle" class="mt-2 text-[1.55rem] leading-tight font-extrabold tracking-tight">Let&rsquo;s find you a time</h2>
+          <p class="mt-2 text-[14px] leading-[1.6] text-slate-300 font-body">Tell us about your visit and <strong class="text-white">our team will call to confirm</strong>.</p>
+        </div>
+        <button id="closeModal" aria-label="Close appointment form" class="shrink-0 flex items-center justify-center w-10 h-10 rounded-xl bg-white/10 text-slate-200 hover:bg-white/20 hover:rotate-90 transition-all duration-300">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <form id="apptForm" class="px-6 sm:px-8 py-7 space-y-5" novalidate>
+      <div>
+        <label for="fullName" class="block text-[13px] font-bold text-ink-800 mb-2">Full Name <span class="text-clinic-600">*</span></label>
+        <input id="fullName" name="fullName" type="text" required autocomplete="name" placeholder="Your full name" class="field w-full px-4 py-3.5 rounded-xl bg-[#F8FAFC] border border-slate-200 text-[15px] text-ink-900 placeholder:text-slate-400 font-body" />
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="phone" class="block text-[13px] font-bold text-ink-800 mb-2">Phone Number <span class="text-clinic-600">*</span></label>
+          <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="(905) 000-0000" class="field w-full px-4 py-3.5 rounded-xl bg-[#F8FAFC] border border-slate-200 text-[15px] text-ink-900 placeholder:text-slate-400 font-body" />
+        </div>
+        <div>
+          <label for="email" class="block text-[13px] font-bold text-ink-800 mb-2">Email <span class="text-clinic-600">*</span></label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" class="field w-full px-4 py-3.5 rounded-xl bg-[#F8FAFC] border border-slate-200 text-[15px] text-ink-900 placeholder:text-slate-400 font-body" />
+        </div>
+      </div>
+
+      <div>
+        <label for="careType" class="block text-[13px] font-bold text-ink-800 mb-2">Type of Care Needed <span class="text-clinic-600">*</span></label>
+        <div class="relative">
+          <select id="careType" name="careType" required class="field appearance-none w-full px-4 py-3.5 pr-11 rounded-xl bg-[#F8FAFC] border border-slate-200 text-[15px] text-ink-900 font-body">
+            <option value="" disabled selected>Select a service&hellip;</option>
+            <option>Checkup &amp; Cleaning</option>
+            <option>Cosmetic (whitening, veneers)</option>
+            <option>Restorative (crowns, bridges, fillings)</option>
+            <option>Emergency / Toothache</option>
+            <option>Kids &amp; Family Visit</option>
+            <option>Gum &amp; Periodontal Care</option>
+            <option>Wisdom Teeth</option>
+            <option>Dentures / Implant-Supported Dentures</option>
+            <option>Not sure &mdash; please advise</option>
+          </select>
+          <svg class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-ink-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="prefDay" class="block text-[13px] font-bold text-ink-800 mb-2">Preferred Day</label>
+          <input id="prefDay" name="prefDay" type="date" class="field w-full px-4 py-3.5 rounded-xl bg-[#F8FAFC] border border-slate-200 text-[15px] text-ink-900 font-body" />
+        </div>
+        <div>
+          <label for="prefTime" class="block text-[13px] font-bold text-ink-800 mb-2">Preferred Time</label>
+          <div class="relative">
+            <select id="prefTime" name="prefTime" class="field appearance-none w-full px-4 py-3.5 pr-11 rounded-xl bg-[#F8FAFC] border border-slate-200 text-[15px] text-ink-900 font-body">
+              <option value="">Any time</option>
+              <option>Morning (10 AM &ndash; 12 PM)</option>
+              <option>Early Afternoon (12 &ndash; 3 PM)</option>
+              <option>Late Afternoon (3 &ndash; 6 PM)</option>
+            </select>
+            <svg class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-ink-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+      </div>
+      <p id="dayHint" class="hidden -mt-2 text-[12.5px] font-semibold text-amber-600 font-body"></p>
+
+      <div class="flex items-center justify-between gap-4 p-4 rounded-2xl bg-clinic-50 border border-clinic-100">
+        <div>
+          <p class="text-[14.5px] font-bold text-ink-900">New patient?</p>
+          <p class="mt-0.5 text-[13px] text-ink-400 font-body">We&rsquo;ll reserve extra time for your first visit.</p>
+        </div>
+        <label class="relative inline-flex items-center cursor-pointer shrink-0">
+          <input id="newPatient" name="newPatient" type="checkbox" class="sr-only" />
+          <span class="toggle-track flex items-center w-12 h-7 rounded-full bg-slate-300 p-1"><span class="toggle-knob block w-5 h-5 rounded-full bg-white shadow"></span></span>
+          <span class="sr-only">New patient</span>
+        </label>
+      </div>
+
+      <p id="formError" class="hidden text-[13.5px] font-semibold text-rose-600 font-body" role="alert"></p>
+
+      <button type="submit" class="btn-primary w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-clinic-600 hover:bg-clinic-700 text-white font-bold shadow-lift">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+        Submit Request
+      </button>
+
+      <p class="text-center text-[12.5px] leading-[1.6] text-ink-400 font-body">This is a <strong class="text-ink-600">request, not a confirmed booking</strong>. For urgent issues please call <a href="tel:+19052018900" class="font-bold text-clinic-600 hover:underline">(905) 201-8900</a>.</p>
+    </form>
+  </div>
+</div>
+
+<div id="toastWrap" class="fixed top-5 right-4 sm:right-6 z-[90] flex flex-col gap-3 pointer-events-none w-[calc(100%-2rem)] sm:w-auto sm:max-w-sm"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- Live open / closed status (Toronto time) ---------- */
+  // day index: 0 = Sunday. [openHour, closeHour] or null when closed.
+  var HOURS = { 0: null, 1: [10, 18], 2: [10, 18], 3: null, 4: [10, 18], 5: [10, 18], 6: [10, 16] };
+  var DAY_NAMES = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+  function fmtHour(h) { return (h > 12 ? h - 12 : h) + (h >= 12 ? ' PM' : ' AM'); }
+
+  function torontoNow() {
+    try {
+      var parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Toronto', weekday: 'short', hour: 'numeric', minute: 'numeric', hour12: false }).formatToParts(new Date());
+      var map = {}; parts.forEach(function (p) { map[p.type] = p.value; });
+      var days = { Sun:0, Mon:1, Tue:2, Wed:3, Thu:4, Fri:5, Sat:6 };
+      var hr = parseInt(map.hour, 10) % 24;
+      return { day: days[map.weekday], mins: hr * 60 + parseInt(map.minute, 10) };
+    } catch (e) {
+      var d = new Date(); return { day: d.getDay(), mins: d.getHours() * 60 + d.getMinutes() };
+    }
+  }
+
+  function nextOpening(day) {
+    for (var i = 1; i <= 7; i++) {
+      var d = (day + i) % 7;
+      if (HOURS[d]) return (i === 1 ? 'tomorrow' : DAY_NAMES[d]) + ' at ' + fmtHour(HOURS[d][0]);
+    }
+    return '';
+  }
+
+  function updateStatus() {
+    var now = torontoNow(), h = HOURS[now.day];
+    var open = h && now.mins >= h[0] * 60 && now.mins < h[1] * 60;
+    var beforeOpen = h && now.mins < h[0] * 60;
+    var title, sub;
+
+    if (open) { title = 'Open now'; sub = 'Until ' + fmtHour(h[1]) + ' today'; }
+    else if (beforeOpen) { title = 'Opens today'; sub = 'At ' + fmtHour(h[0]) + ' · until ' + fmtHour(h[1]); }
+    else { title = 'Closed now'; sub = 'Opens ' + nextOpening(now.day); }
+
+    var dotOn = 'text-emerald-500 bg-emerald-500', dotOff = 'text-amber-400 bg-amber-400';
+
+    document.getElementById('heroStatus').textContent = title;
+    document.getElementById('heroStatusSub').textContent = sub;
+    document.getElementById('heroStatusIcon').className = 'relative flex w-2.5 h-2.5 rounded-full pulse-dot ' + (open ? dotOn : dotOff);
+
+    document.getElementById('barStatus').innerHTML = '<strong class="text-white font-semibold">' + title + '</strong> &middot; ' + sub;
+    document.getElementById('barDot').className = 'relative flex w-2 h-2 rounded-full pulse-dot shrink-0 ' + (open ? 'text-emerald-400 bg-emerald-400' : 'text-amber-400 bg-amber-400');
+
+    document.getElementById('hoursBadgeText').textContent = title;
+    document.getElementById('hoursBadgeDot').className = 'relative flex w-2 h-2 rounded-full pulse-dot ' + (open ? 'text-emerald-400 bg-emerald-400' : 'text-amber-400 bg-amber-400');
+
+    document.querySelectorAll('.hours-row').forEach(function (row) {
+      var isToday = parseInt(row.getAttribute('data-day'), 10) === now.day;
+      row.classList.toggle('today', isToday);
+      var dt = row.querySelector('dt');
+      if (isToday && !dt.querySelector('.today-tag')) {
+        dt.insertAdjacentHTML('beforeend', ' <span class="today-tag ml-1.5 px-1.5 py-0.5 rounded bg-clinic-500 text-white text-[10px] font-bold uppercase tracking-wider align-middle">Today</span>');
+        dt.classList.add('text-white', 'font-bold');
+      }
+    });
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+
+  /* ---------- Rotating hero word ---------- */
+  var rotator = document.getElementById('rotator');
+  if (rotator && !reduceMotion) {
+    var words = rotator.children, idx = 0;
+    setInterval(function () {
+      var cur = words[idx];
+      cur.classList.remove('in'); cur.classList.add('out');
+      idx = (idx + 1) % words.length;
+      var next = words[idx];
+      next.classList.remove('out');
+      void next.offsetWidth; // restart animation
+      next.classList.add('in');
+      setTimeout(function () { cur.classList.remove('out'); }, 520);
+    }, 2600);
+  }
+
+  /* ---------- Navbar + active link ---------- */
+  var navbar = document.getElementById('navbar');
+  var sections = ['services', 'family', 'why', 'location'];
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-link'));
+  function onScroll() {
+    navbar.classList.toggle('shadow-card', window.scrollY > 40);
+    var pos = window.scrollY + 160, current = '';
+    sections.forEach(function (id) { var el = document.getElementById(id); if (el && el.offsetTop <= pos) current = id; });
+    navLinks.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + current); });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---------- Mobile menu ---------- */
+  var menuBtn = document.getElementById('menuBtn'), mobileMenu = document.getElementById('mobileMenu');
+  function setMenu(open) {
+    mobileMenu.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.getElementById('iconOpen').classList.toggle('hidden', open);
+    document.getElementById('iconClose').classList.toggle('hidden', !open);
+  }
+  menuBtn.addEventListener('click', function () { setMenu(!mobileMenu.classList.contains('open')); });
+  document.querySelectorAll('.mobile-link').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+
+  /* ---------- Smooth scroll ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var id = link.getAttribute('href');
+      if (!id || id === '#' || id === '#main') return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.pageYOffset - 84;
+      window.scrollTo({ top: top, behavior: reduceMotion ? 'auto' : 'smooth' });
+      if (history.replaceState) history.replaceState(null, '', id);
+    });
+  });
+
+  /* ---------- Reveal + counters ---------- */
+  function animateCount(el) {
+    var target = parseInt(el.getAttribute('data-count'), 10), start = null, dur = 1200;
+    if (reduceMotion) { el.textContent = target; return; }
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1), eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased);
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        entry.target.querySelectorAll('[data-count]').forEach(animateCount);
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+    document.querySelectorAll('[data-count]').forEach(function (el) { el.textContent = el.getAttribute('data-count'); });
+  }
+
+  /* ---------- Modal ---------- */
+  var modal = document.getElementById('apptModal'), form = document.getElementById('apptForm');
+  var formError = document.getElementById('formError'), dayHint = document.getElementById('dayHint');
+  var lastFocused = null;
+
+  function openModal() {
+    lastFocused = document.activeElement;
+    modal.classList.remove('hidden-modal');
+    document.body.style.overflow = 'hidden';
+    setMenu(false);
+    setTimeout(function () { document.getElementById('fullName').focus(); }, 260);
+  }
+  function closeModal() {
+    modal.classList.add('hidden-modal');
+    document.body.style.overflow = '';
+    formError.classList.add('hidden');
+    if (lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+  document.querySelectorAll('[data-open-modal]').forEach(function (b) { b.addEventListener('click', openModal); });
+  document.getElementById('closeModal').addEventListener('click', closeModal);
+  document.getElementById('modalBackdrop').addEventListener('click', closeModal);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.classList.contains('hidden-modal')) closeModal(); });
+
+  modal.addEventListener('keydown', function (e) {
+    if (e.key !== 'Tab') return;
+    var f = modal.querySelectorAll('button, [href], input, select, textarea');
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  /* Preferred day: min today, warn on closed days, tailor time options for Saturday */
+  var prefDay = document.getElementById('prefDay'), prefTime = document.getElementById('prefTime');
+  var t = new Date();
+  prefDay.min = t.getFullYear() + '-' + String(t.getMonth() + 1).padStart(2, '0') + '-' + String(t.getDate()).padStart(2, '0');
+  prefDay.addEventListener('change', function () {
+    dayHint.classList.add('hidden');
+    if (!prefDay.value) return;
+    var p = prefDay.value.split('-'), day = new Date(+p[0], +p[1] - 1, +p[2]).getDay();
+    if (!HOURS[day]) {
+      dayHint.textContent = 'We’re closed on ' + DAY_NAMES[day] + 's — please pick Mon, Tue, Thu, Fri or Sat.';
+      dayHint.classList.remove('hidden');
+    }
+    prefTime.options[3].disabled = day === 6;
+    prefTime.options[3].text = day === 6 ? 'Late Afternoon (closes 4 PM Sat)' : 'Late Afternoon (3 – 6 PM)';
+    if (day === 6 && prefTime.selectedIndex === 3) prefTime.selectedIndex = 0;
+  });
+
+  /* ---------- Toast ---------- */
+  var toastWrap = document.getElementById('toastWrap');
+  function showToast() {
+    var el = document.createElement('div');
+    el.className = 'pointer-events-auto flex items-start gap-3.5 w-full sm:w-[380px] px-5 py-4 rounded-2xl bg-clinic-600 text-white shadow-modal border border-clinic-500';
+    el.style.animation = 'toastIn .42s cubic-bezier(.16,1,.3,1) both';
+    el.setAttribute('role', 'status');
+    el.innerHTML =
+      '<span class="shrink-0 flex items-center justify-center w-9 h-9 rounded-xl bg-white/15 mt-0.5"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>' +
+      '<div class="flex-1 min-w-0"><p class="text-[14.5px] font-bold leading-snug">Request Submitted!</p><p class="mt-1 text-[13.5px] leading-[1.55] text-clinic-50">Our team will call you shortly to confirm your time.</p></div>' +
+      '<button class="shrink-0 -mr-1 p-1 rounded-lg text-clinic-100 hover:bg-white/15" aria-label="Dismiss">&times;</button>';
+    function dismiss() {
+      el.style.animation = 'toastOut .35s ease forwards';
+      setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 380);
+    }
+    el.querySelector('button').addEventListener('click', dismiss);
+    toastWrap.appendChild(el);
+    setTimeout(dismiss, 5500);
+  }
+
+  /* ---------- Submit ---------- */
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('fullName'), phone = document.getElementById('phone');
+    var email = document.getElementById('email'), care = document.getElementById('careType');
+    var missing = [], firstBad = null;
+
+    function bad(el, label) { missing.push(label); if (!firstBad) firstBad = el; }
+    if (!name.value.trim()) bad(name, 'your full name');
+    if (phone.value.replace(/\D/g, '').length < 10) bad(phone, 'a 10-digit phone number');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) bad(email, 'a valid email');
+    if (!care.value) bad(care, 'the type of care');
+
+    if (missing.length) {
+      formError.textContent = 'Please add ' + missing.join(', ') + '.';
+      formError.classList.remove('hidden');
+      firstBad.focus();
+      return;
+    }
+    formError.classList.add('hidden');
+    dayHint.classList.add('hidden');
+    form.reset();
+    closeModal();
+    showToast();
+  });
+
+  onScroll();
+})();
+</script>
+</body>
+</html>
