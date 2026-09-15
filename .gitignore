@@ -1,3 +1,4 @@
 .netlify/
 resume.pdf
 *.log
+netlify-upload/
