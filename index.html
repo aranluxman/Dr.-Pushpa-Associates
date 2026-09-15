@@ -73,8 +73,8 @@
   @keyframes floaty   { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-12px); } }
   @keyframes marquee  { from { transform:translateX(0); } to { transform:translateX(-50%); } }
   @keyframes pulseRing{ 0% { transform:scale(.9); opacity:.6; } 70% { transform:scale(1.9); opacity:0; } 100% { opacity:0; } }
-  @keyframes wordIn   { from { opacity:0; transform:translateY(60%) rotateX(-60deg); filter:blur(4px); } to { opacity:1; transform:none; filter:blur(0); } }
-  @keyframes wordOut  { to   { opacity:0; transform:translateY(-60%) rotateX(60deg); filter:blur(4px); } }
+  @keyframes wordIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes wordOut { from { opacity:1; } to { opacity:0; } }
   @keyframes toastIn  { from { opacity:0; transform:translateX(28px) scale(.96); } to { opacity:1; transform:none; } }
   @keyframes toastOut { to   { opacity:0; transform:translateX(28px) scale(.96); } }
   @keyframes shimmer  { from { background-position: 200% 0; } to { background-position: -200% 0; } }
@@ -91,10 +91,12 @@
   .float2 { animation: floaty 7s ease-in-out -2.5s infinite; }
 
   /* ---------- Rotating word ---------- */
-  .rotator { display:inline-grid; perspective: 600px; vertical-align: bottom; }
-  .rotator > span { grid-area:1/1; white-space:nowrap; opacity:0; }
-  .rotator > span.in  { animation: wordIn .7s cubic-bezier(.16,1,.3,1) forwards; }
-  .rotator > span.out { animation: wordOut .5s cubic-bezier(.7,0,.84,0) forwards; opacity:1; }
+  .hero-copy { min-width:0; }
+  .hero-title { overflow-wrap:break-word; }
+  .rotator { display:grid; width:100%; line-height:1.2; }
+  .rotator > span { grid-area:1/1; min-width:0; white-space:normal; opacity:0; color:#5EEAD4; }
+  .rotator > span.in { opacity:1; animation:wordIn .24s ease-out both; }
+  .rotator > span.out { animation:wordOut .18s ease-in both; }
   .text-shine {
     background: linear-gradient(90deg,#2DD4BF 0%,#99F6E4 30%,#5EEAD4 50%,#14B8A6 70%,#2DD4BF 100%);
     background-size: 200% auto; -webkit-background-clip:text; background-clip:text; color:transparent;
@@ -265,16 +267,16 @@
     <div class="grid lg:grid-cols-12 gap-14 items-center">
 
       <!-- Copy -->
-      <div class="lg:col-span-7">
+      <div class="hero-copy lg:col-span-7">
         <div class="anim-up inline-flex items-center gap-2.5 pl-2 pr-4 py-2 rounded-full bg-white/[.06] border border-white/10 text-clinic-200 text-[13px] font-semibold backdrop-blur">
           <span class="relative flex w-2.5 h-2.5 rounded-full text-clinic-400 bg-clinic-400 pulse-dot"></span>
           <span><strong class="text-white">Accepting new patients</strong> in Markham</span>
         </div>
 
-        <h1 class="anim-up d1 mt-6 font-extrabold tracking-[-0.03em] text-[2.5rem] leading-[1.1] sm:text-6xl lg:text-[4rem] lg:leading-[1.06]">
+        <h1 class="hero-title anim-up d1 mt-6 font-extrabold tracking-[-0.03em] text-[2.5rem] leading-[1.1] sm:text-6xl lg:text-[4rem] lg:leading-[1.06]">
           Gentle, Comprehensive Dental Care for Your
-          <span class="block mt-1 h-[1.15em] overflow-visible">
-            <span class="rotator text-shine" id="rotator" aria-live="off">
+          <span class="block mt-1">
+            <span class="rotator" id="rotator" aria-live="off">
               <span class="in">Entire Family</span>
               <span>Little Ones</span>
               <span>Growing Teens</span>
@@ -1039,16 +1041,18 @@
   var rotator = document.getElementById('rotator');
   if (rotator && !reduceMotion) {
     var words = rotator.children, idx = 0;
-    setInterval(function () {
+    function rotateWord() {
       var cur = words[idx];
-      cur.classList.remove('in'); cur.classList.add('out');
-      idx = (idx + 1) % words.length;
-      var next = words[idx];
-      next.classList.remove('out');
-      void next.offsetWidth; // restart animation
-      next.classList.add('in');
-      setTimeout(function () { cur.classList.remove('out'); }, 520);
-    }, 2600);
+      cur.addEventListener('animationend', function () {
+        cur.classList.remove('out');
+        idx = (idx + 1) % words.length;
+        words[idx].classList.add('in');
+        setTimeout(rotateWord, 2600);
+      }, { once:true });
+      cur.classList.remove('in');
+      cur.classList.add('out');
+    }
+    setTimeout(rotateWord, 2600);
   }
 
   /* ---------- Navbar + active link ---------- */
