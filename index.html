@@ -1022,9 +1022,12 @@
     document.querySelectorAll('.hours-row').forEach(function (row) {
       var isToday = parseInt(row.getAttribute('data-day'), 10) === now.day;
       row.classList.toggle('today', isToday);
+      row.classList.add('gap-3');
+      row.querySelector('dd').classList.add('whitespace-nowrap');
       var dt = row.querySelector('dt');
+      dt.classList.add('whitespace-nowrap');
       if (isToday && !dt.querySelector('.today-tag')) {
-        dt.insertAdjacentHTML('beforeend', ' <span class="today-tag ml-1.5 px-1.5 py-0.5 rounded bg-clinic-500 text-white text-[10px] font-bold uppercase tracking-wider align-middle">Today</span>');
+        dt.insertAdjacentHTML('beforeend', ' <span class="today-tag ml-1 px-1.5 py-0.5 rounded bg-clinic-500 text-white text-[10px] font-bold uppercase tracking-wider align-middle">Today</span>');
         dt.classList.add('text-white', 'font-bold');
       }
     });
